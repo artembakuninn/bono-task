@@ -1,0 +1,196 @@
+* {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+}
+.form {
+  margin: 0 auto;
+  width: 666px;
+  background-color: #39476d;
+  margin-top: 52px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 472px;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 62px;
+  background-color: #39476d;
+  margin-bottom: 68px;
+}
+.form-input {
+  padding: 22px 0;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+.form-btn {
+  background-color: #e25100;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  padding: 20px 0;
+  outline: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 74px;
+}
+.form-btn:focus {
+  position: relative;
+  top: 3px;
+}
+.form-btn:hover {
+  background-color: #f58747;
+}
+.input-wrapper .grid-email input {
+  background: url(./icons/mail-icon.svg) no-repeat left 8px center;
+  background-color: white;
+}
+.input-wrapper .grid-name input {
+  background: url(./icons/person-icon.svg) no-repeat left 8px center;
+  background-color: white;
+}
+.input-wrapper .grid-lastname input {
+  background: url(./icons/person-icon.svg) no-repeat left 8px center;
+  background-color: white;
+}
+.input-wrapper .grid-password input {
+  background: url(./icons/key-icon.svg) no-repeat left 8px center;
+  background-color: white;
+}
+.input-wrapper .grid-confirm input {
+  background: url(./icons/key-icon.svg) no-repeat left 8px center;
+  background-color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding-left: 40px;
+}
+.input-wrapper {
+  margin-bottom: 68px;
+  display: grid;
+  grid-template-columns: 225px;
+  row-gap: 20px;
+  column-gap: 22px;
+  grid-template-areas:
+    "email email"
+    "name lastname"
+    "password confirm";
+}
+.grid-email {
+  grid-area: email;
+}
+.grid-name {
+  grid-area: name;
+}
+.grid-lastname {
+  grid-area: lastname;
+}
+.grid-password {
+  grid-area: password;
+}
+.grid-confirm {
+  grid-area: confirm;
+}
+/* TABLET STYLE */
+
+@media only screen and (max-width: 670px) {
+  .form {
+    margin-top: 41px;
+  }
+  .form-container {
+    align-items: center;
+    margin-top: 0;
+    padding-top: 51px;
+    width: 500px;
+  }
+  .form-input {
+    width: 100%;
+  }
+  .form-btn {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .input-wrapper {
+    width: 100%;
+    margin-bottom: 68px;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 20px;
+    grid-template-areas:
+      "email"
+      "name "
+      "lastname "
+      "password "
+      "confirm";
+  }
+  .grid-email {
+    grid-area: email;
+  }
+  .grid-name {
+    grid-area: name;
+  }
+  .grid-lastname {
+    grid-area: lastname;
+  }
+  .grid-password {
+    grid-area: password;
+  }
+  .grid-confirm {
+    grid-area: confirm;
+  }
+}
+
+/* MOBILE STYLE */
+@media only screen and (max-width: 450px) {
+  .form {
+    margin-top: 41px;
+  }
+  .form-container {
+    align-items: center;
+    margin-top: 0;
+    padding-top: 51px;
+    width: 500px;
+  }
+  .form-input {
+    width: 100%;
+    padding: 30px 0px;
+  }
+  .form-btn {
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 20px 0px;
+  }
+  .input-wrapper {
+    width: 100%;
+    margin-bottom: 68px;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 30px;
+    grid-template-areas:
+      "email"
+      "name "
+      "lastname "
+      "password "
+      "confirm";
+  }
+  .grid-email {
+    grid-area: email;
+  }
+  .grid-name {
+    grid-area: name;
+  }
+  .grid-lastname {
+    grid-area: lastname;
+  }
+  .grid-password {
+    grid-area: password;
+  }
+  .grid-confirm {
+    grid-area: confirm;
+  }
+}

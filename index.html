@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="form">
+        <form class="form-container" id="form">
+            <div class="input-wrapper">
+                <div class='input-container grid-email'>
+                    <input type="text" class="form-input" placeholder="E-mail" name="email">
+                    <p class="error"></p>
+                </div>
+                <div class='input-container grid-name'>
+                    <input type="text" class="form-input" placeholder="Имя" autocomplete="off" id="name" name="username">
+                    <p class="error"></p>
+                </div>
+                <div class='input-container grid-lastname'>
+                    <input type="text" class="form-input" placeholder="Фамилия" autocomplete="off" id="lastname" name="userlastname">
+                    <p class="error"></p>
+                </div>
+                <div class='input-container grid-password'>
+                    <input type="password" class="form-input" placeholder="Пароль" autocomplete="off" id="password" name="password">
+                    <p class="error"></p>
+                </div>
+                <div class='input-container grid-confirm'>
+                    <input type="password" class="form-input" placeholder="Повторите пароль" autocomplete="off"
+                        id="confirm" name="confirm">
+                        <p class="error"></p>
+                </div>
+            </div>
+            <button type="submit" class="form-btn" id="button">Отправить</button>
+        </form>
+    </section>
+    <script src='./main.js'></script>
+</body>
+
+</html>
